@@ -8,175 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    /*---VAR---*/
-
-    :root {
-      --softBlue: hsl(215, 51%, 70%);
-      --cyan: hsl(178, 100%, 50%);
-
-      --Verydarkblue-main-BG: hsl(217, 54%, 11%);
-      --Verydarkblue-card-BG: hsl(216, 50%, 16%);
-      --Verydarkblue-line: hsl(215, 32%, 27%);
-      --White: hsl(0, 0%, 100%);
-    }
-
-    /* ---- */
-
-    body {
-      background-color: var(--Verydarkblue-main-BG);
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: .3rem;
-    }
-
-    .attribution {
-      font-size: 1rem;
-      text-align: center;
-      position: absolute;
-      color: var(--softBlue);
-      right: 0;
-      left: 0;
-      bottom: 0;
-      font-family: 'Outfit', sans-serif;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-    .attribution a:visited{
-      color: var(--cyan)
-    }
-    .attribution a:link{
-      color:white;
-    }
-
-    /* --- */
-    .card {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 14.5rem;
-      height: 26rem;
-      background-color: var(--Verydarkblue-card-BG);
-      border-radius: .7rem;
-      padding: 1rem;
-      font-family: 'Outfit', sans-serif;
-    }
-
-    .card-image {
-      position: relative;
-      font-size: 0;
-    }
-
-    .eye {
-      position: absolute;
-      background-color: hsla(178, 100%, 50%, 0.356);
-      top: 0;
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      border-radius: .3rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card-image > img:hover {
-      cursor: pointer;
-    }
-
-    .card-image  > img:hover+.eye {
-      opacity: 1;
-    }
-
-    /* --- */
-    .card a {
-      font-weight: 600;
-      color: var(--White);
-      margin-top: 1.2rem;
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      color: var(--cyan);
-    }
-
-    .creator a {
-      font-size: .8rem;
-      font-weight: 300;
-    }
-
-    .card p {
-      font-size: .85rem;
-      color: var(--softBlue);
-      margin: .6rem 0;
-    }
-
-    /* ---- */
-    .info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: .3rem;
-      font-size: .8rem;
-      color: var(--cyan);
-    }
-
-    .info strong::before {
-      content: '';
-      background: url(images/icon-ethereum.svg) no-repeat center/9px;
-      padding: 0 .7rem;
-    }
-
-    .info p::before {
-      content: '';
-      background: url(images/icon-clock.svg) no-repeat center center/13px ; 
-      padding: 0 .7rem;
-      line-height: 13px;
-    }
-
-    /* --- */
-    .creator {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1rem;
-      border-top: 1px solid var(--softBlue);
-      padding: .6rem 0;
-      font-size: .8rem;
-    }
-
-    .creator a {
-      margin: 0;
-    }
-
-    .creator img {
-      width: 1.5rem;
-      border: 1px solid var(--White);
-      border-radius: 50%;
-    }
-  </style>
 </head>
 <body>
-  <section class="card">
+  <main class="card" role="main">
     <article class="card-image">
         <img src="images/image-equilibrium.jpg" alt="Equilibrium #3429">
       <div class="eye"><img src="images/icon-view.svg" alt="Eye"></div>
     </article>
-    <a href="">Equilibrium #3429</a>
+    <h1><a href="">Equilibrium #3429</a></h1>
+    <!-- <a href="">Equilibrium #3429</a> -->
     <p>Our Equilibrium collection promotes balance and calm.</p>
     <article class="info">
       <strong>0.041ETH</strong>
@@ -187,7 +31,7 @@
       <p>Creation of <a href="">Jules Wyvern</a></p>
     </article>
     </article>
-  </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/CosmoArt" target="_blank">CosmoArt</a>.
