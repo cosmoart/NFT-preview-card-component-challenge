@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/CosmoArt/NFT-preview-card-component-challenge#author)
-- Live Site URL: [Add live site URL here](https://cosmoart.github.io/NFT-preview-card-component-challenge/)
+- [Solution URL:](https://www.frontendmentor.io/solutions/nft-preview-card-component-solution-cUkirQ6I5)
+- [Live Site URL:](https://cosmoart.github.io/NFT-preview-card-component-challenge/)
 
 ## My process
 
